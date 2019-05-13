@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeatherForecastCell" customModule="OpenWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMr-nB-dyR">
+                    <rect key="frame" x="14" y="14.5" width="187" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="187" id="vlS-te-bcX"/>
+                        <constraint firstAttribute="height" constant="21" id="xda-FW-KWs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-NA-JdF">
+                    <rect key="frame" x="240" y="15" width="96" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="D6d-J7-HGB"/>
+                        <constraint firstAttribute="width" constant="96" id="ydu-YZ-ldH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-LX-mEc">
+                    <rect key="frame" x="209" y="14.5" width="23" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="0We-49-mua"/>
+                        <constraint firstAttribute="height" constant="21" id="5dT-cx-Yjo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XMr-nB-dyR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="5hl-rN-0r1"/>
+                <constraint firstItem="G0t-LX-mEc" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="98T-zs-OUb"/>
+                <constraint firstItem="XMr-nB-dyR" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ktd-Wx-s2n"/>
+                <constraint firstItem="pLi-NA-JdF" firstAttribute="leading" secondItem="G0t-LX-mEc" secondAttribute="trailing" constant="8" id="N31-Xe-ZTS"/>
+                <constraint firstItem="pLi-NA-JdF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="caf-Lt-M7j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pLi-NA-JdF" secondAttribute="trailing" constant="39" id="ejw-TC-nMh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateTimeLabel" destination="XMr-nB-dyR" id="MS9-zy-cZ0"/>
+                <outlet property="tempLabel" destination="pLi-NA-JdF" id="7DR-7o-Y4t"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="152.92353823088456"/>
+        </view>
+    </objects>
+</document>
